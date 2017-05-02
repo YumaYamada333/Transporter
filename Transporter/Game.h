@@ -23,22 +23,6 @@ public:
 
 private:
 
-	// Device resources.
-	//HWND                                            m_window;
-	//int                                             m_outputWidth;
-	//int                                             m_outputHeight;
-
-	//D3D_FEATURE_LEVEL                               m_featureLevel;			//機能レベル
-	//Microsoft::WRL::ComPtr<ID3D11Device>            m_d3dDevice;			//デバイス
-	//Microsoft::WRL::ComPtr<ID3D11Device1>           m_d3dDevice1;
-	//Microsoft::WRL::ComPtr<ID3D11DeviceContext>     m_d3dContext;			//コンテキスト
-	//Microsoft::WRL::ComPtr<ID3D11DeviceContext1>    m_d3dContext1;
-
-	//Microsoft::WRL::ComPtr<IDXGISwapChain>          m_swapChain;			//スワップチェーン
-	//Microsoft::WRL::ComPtr<IDXGISwapChain1>         m_swapChain1;
-	//Microsoft::WRL::ComPtr<ID3D11RenderTargetView>  m_renderTargetView;		//レンダーターゲットビュー
-	//Microsoft::WRL::ComPtr<ID3D11DepthStencilView>  m_depthStencilView;		//深度ステンシルビュー
-																		
 	DX::StepTimer                                   m_timer;				// Rendering loop timer.(フレーム管理？)
 
 	std::unique_ptr<SceneManager>					m_scene_manager;		//シーン管理オブジェクト
@@ -68,12 +52,4 @@ private:
 
     void Update(DX::StepTimer const& timer);
     void Render();
-
-    /*void Clear();
-    void Present();*/
-
-    //void CreateDevice();		//デバイスを作成
-    //void CreateResources();		
-
-    //void OnDeviceLost();
 };
