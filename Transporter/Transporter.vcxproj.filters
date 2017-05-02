@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>eec08c73-8cc7-4c18-8977-c3f055b32c44</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dds;dlg;fbx;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{75bfc20d-1533-483c-8cdc-613fde075e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{4a51f77f-04ac-4507-b942-e9917a7ec821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Title">
+      <UniqueIdentifier>{79f92a77-465b-4b6e-87d4-0877adfcf84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Logo">
+      <UniqueIdentifier>{2956e53a-6904-4fda-beb4-953fa7854eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Play">
+      <UniqueIdentifier>{92842a43-ad96-4592-ac1e-b469f3a868ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Clear">
+      <UniqueIdentifier>{96b59723-33d0-455b-8ac8-5cedcdb00380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Over">
+      <UniqueIdentifier>{99396887-05f4-434d-8488-3b9b22640bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Base">
+      <UniqueIdentifier>{26a3fd81-0bcc-482d-bf19-a8c9e0b3b262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{44ed086d-0f67-43a0-8f93-f4e301a68ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SceneManager">
+      <UniqueIdentifier>{0b521fc5-b2de-47cf-9381-326cc19b86d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\RenderingManager">
+      <UniqueIdentifier>{e16c4dd0-a4d6-4279-9135-b52f68ccbb89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="StepTimer.h" />
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Base_virtual\GameBase.h">
+      <Filter>Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Clear\GameClear.h">
+      <Filter>Scene\Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Logo\GameLogo.h">
+      <Filter>Scene\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Over\GameOver.h">
+      <Filter>Scene\Over</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Play\GamePlay.h">
+      <Filter>Scene\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Title\GameTitle.h">
+      <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\SceneManager.h">
+      <Filter>Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Render\RenderingResourceManager.h">
+      <Filter>Manager\RenderingManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Clear\GameClear.cpp">
+      <Filter>Scene\Clear</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Logo\GameLogo.cpp">
+      <Filter>Scene\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Over\GameOver.cpp">
+      <Filter>Scene\Over</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Play\GamePlay.cpp">
+      <Filter>Scene\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Title\GameTitle.cpp">
+      <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\SceneManager.cpp">
+      <Filter>Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Render\RenderingResourceManager.cpp">
+      <Filter>Manager\RenderingManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Assets</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>
